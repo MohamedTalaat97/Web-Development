@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(to top, #ff8080, gray);
+}
+
+h1 {
+    color: white;
+    color: linear-gradient(red, yellow);
+    box-shadow: 6em;
+    text-align: center;
+}
+
+input {
+    opacity: 0.8;
+    border-radius: 3%
+}
+
+input:hover {
+    opacity: 1;
+    box-shadow: 6em;
+}
+
+.nav {
+    height: 15%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #990000;
+    box-shadow: 2px;
+    border-radius: 10%;
+}
+
+.nav ul li {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20%;
+    /* make each list item a link with an href*/
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+ul li:hover {
+    background-color: gray;
+}
+
+.input input {
+    width: 75%;
+    padding: 10px;
+}
+
+.input button {
+    width: 23%;
+}
+
+.input {
+    margin: 2%;
+}
+
+.info {
+    width: 60%;
+    padding: 4px;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    float: left;
+    margin: 2px;
+}
+
+.poster {
+    width: 36%;
+    display: inline-block;
+    margin: 1%;
+}
+
+button {
+    background-color: #990000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2%;
+}
+
+button:hover {
+    font-size: 20px;
+}
+
+.container {
+    border: solid;
+}
