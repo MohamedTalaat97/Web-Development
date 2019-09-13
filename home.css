@@ -1,5 +1,9 @@
+/*#################### whole #################*/
+
 body {
     background-image: linear-gradient(to top, #ff8080, gray);
+    line-height: 1;
+    margin: 0px;
 }
 
 h1 {
@@ -8,6 +12,89 @@ h1 {
     box-shadow: 6em;
     text-align: center;
 }
+
+
+/*#################### nav bar ##################*/
+
+.nav {
+    height: 15%;
+    margin-bottom: 2%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    background-color: #990000;
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #990000;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+.nav ul li {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    /* make each list item a link with an href*/
+}
+
+.nav ul li.nav-right {
+    float: right;
+}
+
+ul li a:hover {
+    background-color: gray;
+}
+
+.nav ul li.menu {
+    display: none;
+}
+
+
+/*########################### mobile#########3*/
+
+@media screen and (max-width: 680px) {
+    .nav ul li.nav-icon {
+        display: none;
+    }
+    .nav ul li.menu {
+        display: block;
+    }
+    .nav.responsive ul li.menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .nav.responsive {
+        position: relative;
+    }
+    .nav.responsive ul li {
+        display: inline;
+        float: none;
+    }
+    .nav.responsive ul li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+
+/*#################### input #################*/
 
 input {
     opacity: 0.8;
@@ -19,48 +106,11 @@ input:hover {
     box-shadow: 6em;
 }
 
-.nav {
-    height: 15%;
-    margin-bottom: 2%;
-    width: 100%;
-}
-
-.nav a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #990000;
-    box-shadow: 2px;
-    border-radius: 10%;
-}
-
-.nav ul li {
-    float: left;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 20%;
-    /* make each list item a link with an href*/
-}
-
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: white;
-}
-
-ul li:hover {
-    background-color: gray;
-}
-
 .input input {
-    width: 75%;
+    width: 70%;
     padding: 10px;
+    margin-top: 4vmax;
+    border: 0px;
 }
 
 .input button {
@@ -68,8 +118,11 @@ ul li:hover {
 }
 
 .input {
-    margin: 2%;
+    margin: 4vmax;
 }
+
+
+/*########################### article #####################*/
 
 .info {
     width: 60%;
@@ -78,7 +131,18 @@ ul li:hover {
     display: inline-block;
     height: 100%;
     float: left;
-    margin: 2px;
+}
+
+div {
+    overflow: hidden;
+}
+
+img {
+    border-radius: 2%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 .poster {
@@ -93,12 +157,87 @@ button {
     padding: 10px;
     text-align: center;
     border-radius: 2%;
+    border: 0px;
 }
 
 button:hover {
-    font-size: 20px;
+    background-color: gray;
 }
 
 .container {
     border: solid;
+    border-radius: 1%;
+    margin: 2vmax;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+;
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    border: 2px solid red;
+    float: left;
 }

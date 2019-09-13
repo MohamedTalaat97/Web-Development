@@ -2,58 +2,65 @@
 <html>
 
 <head>
-
-
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
-
-    <div class="title">
-        <h1>MMDP</h1>
-    </div>
-
-    <div class="nav">
+    <script>
+        function menuClicked() {
+            var x = document.getElementById('un-list');
+            x.className += " responsive ";
+            console.log('7mada');
+        }
+    </script>
+    <div class="nav" id="un-list">
         <ul>
 
             <li><a href="#">Home</a></li>
-            <li><a href="#">My Movies</a></li>
-            <li><a href="#">About</a></li>
+            <li class="nav-icon"><a href="#">New</a></li>
+            <li class="nav-icon"><a href="#">Contact</a></li>
+            <li class="nav-icon"><a href="#">About</a></li>
+            <li class="nav-right nav-icon"><a href="#">Sign In</a></li>
+            <li class="nav-right nav-icon"><a href="#">Sign UP</a></li>
+            <li class="menu nav-right">
+                <a href="javascript:void(0);" onclick="menuClicked()">&#9776</a></li>
 
         </ul>
     </div>
-    <div class="input">
 
-        <input type="text" class="in_movie">
-        <button class="btn_search">Search Movie</button>
+
+    <div class="input ">
+
+        <input type="text " class="in_movie ">
+        <button class="btn_search ">Search Movie</button>
     </div>
-    <div class="container">
+    <div class="row ">
 
-        <div class="info">
+        <div class="info ">
             <P>movie info hera</P>
         </div>
 
 
-        <div class="poster">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/71nsvxFpSTL._SY606_.jpg" alt="movie poseter here ">
+        <div class="poster ">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71nsvxFpSTL._SY606_.jpg " alt="movie poseter here ">
         </div>
 
+    </div>
 
+    <div class="row ">
+
+
+        <div class="col-3 "> <img src="https://images-na.ssl-images-amazon.com/images/I/71nsvxFpSTL._SY606_.jpg " alt="movie poseter here "></div>
+        <div class="col-6 "> <img src="https://images-na.ssl-images-amazon.com/images/I/71nsvxFpSTL._SY606_.jpg " alt="movie poseter here "></div>
+        <div class="col-3 "> <img src="https://images-na.ssl-images-amazon.com/images/I/71nsvxFpSTL._SY606_.jpg " alt="movie poseter here "></div>
 
 
 
     </div>
-
 
 
 
 
 </body>
-
-
-
-
-
-
-</html>
