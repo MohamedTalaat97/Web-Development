@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!----------------------- Nav Bar ---------------------------->
+    <script>
+        function menuClicked() {
+            //adds a new class to an element with an id
+            var x = document.getElementById('un-list');
+            x.className += " responsive ";
+            console.log('7mada');
+        }
+    </script>
+    <div class="nav" id="un-list">
+        <ul>
+
+            <li><a href="#">Home</a></li>
+            <li class="nav-icon"><a href="#">New</a></li>
+            <li class="nav-icon"><a href="#">Contact</a></li>
+            <li class="nav-icon"><a href="#">About</a></li>
+            <li class="nav-right nav-icon"><a href="#">Sign In</a></li>
+            <li class="nav-right nav-icon"><a href="#">Sign UP</a></li>
+            <li class="menu nav-right">
+                <a href="javascript:void(0);" onclick="menuClicked()">&#9776</a></li>
+
+        </ul>
+    </div>
+
+    <!----------------------- input ---------------------------->
+    <div class="input ">
+
+        <input type="text " class="in_movie ">
+        <button class="btn_search ">Search Movie</button>
+    </div>
+
+    <!----------------------- info ---------------------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <P>movie info hera</P>
+                </article>
+            </div>
+            <div class="col-5">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71nsvxFpSTL._SY606_.jpg " alt="movie poseter here ">
+            </div>
+        </div>
+    </div>
+
+    <header>
+
+        <h1 class="header">Search Your Favorite Movies</h1>
+    </header>
+
+    <!----------------------- favourite---------------------------->
+    <div class="container ">
+
+        <div class="row">
+            <div class="col-4 ">
+                <div class="card">
+                    <img class="cardimg" src="m.png" alt="movie poseter here ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="col-4 ">
+                <div class="card">
+                    <img class="cardimg" src="m.png" alt="movie poseter here ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="col-4 ">
+                <div class="card">
+                    <img class="cardimg" src="m.png" alt="movie poseter here ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!----------------------- favourite---------------------------->
+    <footer>
+
+
+
+
+
+    </footer>
+
+
+
+
+</body>

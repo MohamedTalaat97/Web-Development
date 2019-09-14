@@ -1,0 +1,295 @@
+/*#################### whole #################*/
+
+body {
+    background-image: linear-gradient(to top, #ff8080, gray);
+    line-height: 1;
+    margin: 0px;
+}
+
+h1 {
+    color: white;
+    color: linear-gradient(red, yellow);
+    box-shadow: 6em;
+    text-align: center;
+}
+
+
+/*#################### nav bar ##################*/
+
+.nav {
+    height: 15%;
+    margin-bottom: 2%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    background-color: #990000;
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #990000;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+.nav ul li {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    /* make each list item a link with an href*/
+}
+
+.nav ul li.nav-right {
+    float: right;
+}
+
+ul li a:hover {
+    background-color: gray;
+}
+
+.nav ul li.menu {
+    display: none;
+}
+
+
+/*#################### input #################*/
+
+input {
+    opacity: 0.8;
+    border-radius: 3%
+}
+
+input:hover {
+    opacity: 1;
+    box-shadow: 6em;
+}
+
+.input input {
+    width: 70%;
+    padding: 10px;
+    margin-top: 4vmax;
+    border: 0px;
+}
+
+.input button {
+    width: 23%;
+}
+
+.input {
+    margin: 4vmax;
+}
+
+
+/*########################### article #####################*/
+
+.info {
+    width: 60%;
+    padding: 4px;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    float: left;
+}
+
+div {
+    overflow: hidden;
+}
+
+img {
+    border-radius: 2%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.container.row.col-5 img {
+    margin: auto;
+}
+
+div.card {
+    background-color: gray;
+    text-align: center;
+    padding: 10%;
+    border: solid 1px black;
+    margin: 10%;
+}
+
+.cardimg {
+    text-align: center;
+}
+
+.poster {
+    width: 36%;
+    display: inline-block;
+    margin: 1%;
+}
+
+button {
+    background-color: #990000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2%;
+    border: 0px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.container {
+    border-radius: 1%;
+    margin: 2vmax;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+;
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+
+/*##############33333333333333333*/
+
+.header {
+    margin: auto;
+    font-size: 2vmax;
+    padding: 2%;
+}
+
+
+/*########################### mobile#########3*/
+
+@media screen and (max-width: 680px) {
+    .nav ul li.nav-icon {
+        display: none;
+    }
+    .nav ul li.menu {
+        display: block;
+    }
+    .nav.responsive ul li.menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .nav.responsive {
+        position: relative;
+    }
+    .nav.responsive ul li {
+        display: inline;
+        float: none;
+    }
+    .nav.responsive ul li a {
+        display: block;
+        text-align: left;
+    }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-13 {
+        width: 100%;
+    }
+    div.card {
+        background-color: gray;
+        text-align: center;
+        padding: 5%;
+        border: solid 1px black;
+        margin: 5%;
+        border-radius: 2%;
+        display: block;
+    }
+}
