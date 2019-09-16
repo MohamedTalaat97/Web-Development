@@ -1,3 +1,21 @@
-.sectionnav {
-    background-color: #cc0052;
+.jumbo-section {
+    background-image: url(assets/cinema.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.btn-outline-secondary {
+    background-color: #cc0000;
+    color: white;
+}
+
+.footer {
+    background-color: #cc0000;
+    color: white;
+    text-align: center;
+}
+
+i {
+    padding: 10px;
 }
