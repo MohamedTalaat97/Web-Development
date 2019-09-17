@@ -25,3 +25,8 @@ i {
 #search-row {
     margin: 2%;
 }
+
+.media-info {
+    width: 100%;
+    display: none;
+}
